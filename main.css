@@ -1,0 +1,637 @@
+    /* DESKTOP CSS  */
+
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+        background: #e6e6ea;
+    }
+
+    /*                                                                                                                                                      BODY */
+
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+        background: #f4f4f8;
+        /* space  */
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: 70px 50px auto 100px;
+        gap: 10px;
+    }
+
+    header {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+
+    /*                                                                                                                                                           NAV  */
+
+    nav {
+        background: #3c2f2f;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        /* space  */
+        display: flex;
+        align-items: center;
+    }
+
+    nav > a {
+        color: #ffffff;
+        text-decoration: none;
+        padding-left: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+    }
+
+    .more {
+        margin-left: auto;
+        padding-right: 10px;
+        background: white;
+        color:black;
+        z-index: 10;
+        display:flex;
+        flex-direction: column;
+    }
+
+    /* .mored {
+display: flex;
+flex-direction: column;
+
+    } */
+
+
+
+
+
+    /*                                                                                                                                               NAV ENDS  */
+
+    /* ------------------------------------------------------------ */
+
+    /* ------------------------------------------------------------ */
+
+    /* ------------------------------------------------------------ */
+
+    /* ------------------------------------------------------------ */
+
+    /*                                                                                                                                              CONTAINER  */
+
+    #container {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        /* space  */
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 500px repeat(4, minmax(800px, 1100px));
+        gap: 4px;
+    }
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /*                                                                                                                                                 LATEST NEWS  */
+
+    #latestnews {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        /* space  */
+        display: grid;
+        grid-template-rows: 30px auto;
+        row-gap: 2px;
+    }
+
+    #latestnews h2 {
+        font-family: 'Exo 2', sans-serif;
+        text-decoration: none;
+        background: #3c2f2f;
+        color: #ffffff;
+        cursor: none;
+        padding-left: 4px;
+    }
+
+    #latestnews a {
+        text-decoration: none;
+        font-family: 'Exo 2', sans-serif;
+        color: black;
+        padding-left: 4px;
+    }
+
+    #latestnews p {
+        font-size: 18px;
+    }
+
+    #latestnews a:nth-child(2n) {
+        background: #dddddd;
+        color: black;
+    }
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /*                                                                                                                                         MAIN HERO  */
+
+    #hero {
+        grid-column: 4/-1;
+        grid-row: 1/2;
+        /* space  */
+        display: grid;
+        grid-template-rows: 400px 1fr;
+        grid-template-columns: none;
+    }
+
+    #hero img {
+        grid-row: 1/2;
+        /* space  */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #hero h2 {
+        font-family: 'Gudea', sans-serif;
+        grid-row: 2/3;
+        background: #eeeeee;
+        padding-left: 5px;
+        /* space  */
+    }
+
+    /*                                                                                                                             MAIN HERO ENDS  */
+
+    /* ----------- */
+
+    /* ----------- */
+
+    /*                                                                                                                              PHONE SECTION */
+
+    #phonesection {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        /* space  */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 30px repeat(20, 40px) 20px;
+        gap: 10px;
+    }
+
+    .phonesheading {
+        background: #3c2f2f;
+        /* space  */
+        grid-column: 1/-1;
+        color: #ffffff;
+        padding-left: 4px;
+    }
+
+    /*                                                                                                                                       Phone-HERO  */
+
+    #phero {
+        grid-column: 1/-1;
+        grid-row: 2/9;
+        /* space  */
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 40px);
+    }
+
+    #phero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* space  */
+        grid-column: 1/ span 4;
+        grid-row: 1/9;
+    }
+
+    #phero h4 {
+        grid-column: 5/span 4;
+        grid-row: 1/span 1;
+        /* space  */
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 0px;
+        color: black;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: 'Gudea', sans-serif;
+    }
+
+    #phero p {
+        grid-column: 5/span 4;
+        grid-row: 2/-1;
+        /* SPACE  */
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 8px;
+        padding-top: 4px;
+        text-align: justify;
+        background: #dddddd;
+        color: black;
+        margin-left: 2px;
+    }
+
+    #phonesection #phero {
+        text-decoration: none;
+    }
+
+    /* P-HERO ENDS  */
+
+    /*                                                                                                                                                  P1-8  */
+
+    .phonebox1, .phonebox2, .phonebox3, .phonebox4 {
+        grid-row: 10/16;
+    }
+
+    .phonebox1 h3, .phonebox2 h3, .phonebox3 h3, .phonebox4 h3 {
+        padding: 4px;
+        background: #eeeeee;
+    }
+
+    .phonebox1 img, .phonebox2 img, .phonebox3 img, .phonebox4 img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .phonebox1 {
+        grid-column: 1/2;
+    }
+
+    .phonebox2 {
+        grid-column: 2/3;
+    }
+
+    .phonebox3 {
+        grid-column: 3/4
+    }
+
+    .phonebox4 {
+        grid-column: 4/5;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------ */
+
+    .phonebox5 {
+        grid-column: 1/ span 2;
+    }
+
+    .phonebox6 {
+        grid-column: 3 / span 2;
+    }
+
+    .phonebox5, .phonebox6 {
+        grid-row: 16/19;
+        display: flex;
+    }
+
+    .phonebox7 {
+        grid-column: 1 / span 2;
+    }
+
+    .phonebox8 {
+        grid-column: 3 / span 2;
+    }
+
+    .phonebox7, .phonebox8 {
+        grid-row: 19 / span 3;
+        display: flex;
+    }
+
+    /* -------------------------------------------------------------------------------------------------------- */
+
+    .phonebox5 img, .phonebox7 img, .phonebox6 img, .phonebox8 img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .phonebox5 h3, .phonebox6 h3, .phonebox7 h3, .phonebox8 h3 {
+        width: 48%;
+        height: 100%;
+        color: black;
+        display: inline-block;
+        margin-bottom: 10px;
+        background: #eeeeee;
+        margin-left: 5px;
+        padding-left: 2px;
+    }
+
+    #phonesection h6 {
+        grid-row: 22/-1;
+        grid-column: 4/-1;
+        margin-left: auto;
+    }
+
+    /*                                                                                                                                      ph- 1-8 ENDS */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /* ----  */
+
+    /*                                                                                                                  Pcs and Laptops Starts  */
+
+    #P-L {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        /* sPACE  */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 30px repeat(20, 40px) 20px;
+        gap: 10px;
+    }
+
+    .P-Lheading {
+        background: #3c2f2f;
+        color: #ffffff;
+        grid-column: 1/-1;
+        padding-left: 4px;
+    }
+
+    /* P-L HERO  */
+
+    #P-Lhero {
+        grid-column: 1/-1;
+        grid-row: 2/9;
+        /* space  */
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 40px);
+    }
+
+    #P-Lhero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* space  */
+        grid-column: 1/ span 4;
+        grid-row: 1/9;
+    }
+
+    #P-Lhero h4 {
+        grid-column: 5/span 4;
+        grid-row: 1/span 1;
+        /* space  */
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 0px;
+        color: black;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: 'Gudea', sans-serif;
+    }
+
+    #P-L #P-Lhero {
+        text-decoration: none;
+    }
+
+    #P-Lhero p {
+        grid-column: 5/span 4;
+        grid-row: 2/-1;
+        /* SPACE  */
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 8px;
+        padding-top: 4px;
+        text-align: justify;
+        background: #dddddd;
+        color: black;
+        margin-left: 2px;
+    }
+
+    #phonesection #P-Lhero {
+        text-decoration: none;
+    }
+
+    #P-L h6 {
+        grid-row: 22/-1;
+        grid-column: 4/-1;
+        margin-left: auto;
+    }
+
+    /*                                                                                                                              PHONE AND LAPTOP ENDS */
+
+    /* --  */
+
+    /* --  */
+
+    /* --  */
+
+    /* --  */
+
+    /*                                                                                                                                              TT STARTS  */
+
+    #TT {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        /* sPACE  */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 30px repeat(20, 40px) 20px;
+        gap: 10px;
+    }
+
+    .ttheading {
+        background: #3c2f2f;
+        color: #ffffff;
+        grid-column: 1/-1;
+        padding-left: 4px;
+    }
+
+    /* TT HERO  */
+
+    #TThero {
+        grid-column: 1/-1;
+        grid-row: 2/9;
+        /* space  */
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 40px);
+    }
+
+    #TThero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* space  */
+        grid-column: 1/ span 4;
+        grid-row: 1/9;
+    }
+
+    #TThero h4 {
+        grid-column: 5/span 4;
+        grid-row: 1/span 1;
+        /* space  */
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 0px;
+        color: black;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: 'Gudea', sans-serif;
+    }
+
+    #TT #TThero {
+        text-decoration: none;
+    }
+
+    #TThero p {
+        grid-column: 5/span 4;
+        grid-row: 2/-1;
+        /* SPACE  */
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 8px;
+        padding-top: 4px;
+        text-align: justify;
+        background: #dddddd;
+        color: black;
+        margin-left: 2px;
+    }
+
+    #phonesection #TThero {
+        text-decoration: none;
+    }
+
+    #TT h6 {
+        grid-row: 22/-1;
+        grid-column: 4/-1;
+        margin-left: auto;
+    }
+
+    /*                                                                                                                                              TT ENDS  */
+
+    /* ---  */
+
+    /* ---  */
+
+    /* ---  */
+
+    /* ---  */
+
+    /* ---  */
+
+    /*                                                                                                                                             BG STARTS  */
+
+    #bg {
+        grid-column: 1/-1;
+        grid-row: 5/6;
+        /* sPACE  */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 30px repeat(20, 40px) 20px;
+        gap: 10px;
+    }
+
+    .bgheading {
+        background: #3c2f2f;
+        color: #ffffff;
+        grid-column: 1/-1;
+        padding-left: 4px;
+    }
+
+    /* BG HERO  */
+
+    #bghero {
+        grid-column: 1/-1;
+        grid-row: 2/9;
+        /* space  */
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 40px);
+    }
+
+    #bghero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* space  */
+        grid-column: 1/ span 4;
+        grid-row: 1/9;
+    }
+
+    #bghero h4 {
+        grid-column: 5/span 4;
+        grid-row: 1/span 1;
+        /* space  */
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 0px;
+        color: black;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: 'Gudea', sans-serif;
+    }
+
+    #bg #bghero {
+        text-decoration: none;
+    }
+
+    #bghero p {
+        grid-column: 5/span 4;
+        grid-row: 2/-1;
+        /* SPACE  */
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 8px;
+        padding-top: 4px;
+        text-align: justify;
+        background: #dddddd;
+        color: black;
+        margin-left: 2px;
+    }
+
+    #phonesection #bghero {
+        text-decoration: none;
+    }
+
+    #bg h6 {
+        grid-row: 22/-1;
+        grid-column: 4/-1;
+        margin-left: auto;
+    }
+
+    /*                                                                                                                                  BG ends  */
+
+    /*                                                                                                                              Footer Starts  */
+
+    footer {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        background: #3c2f2f;
+        margin-bottom: 2px;
+    }
+
+    /*                                                                                                                               footer Ends */
