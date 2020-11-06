@@ -23,7 +23,7 @@
         display: grid;
         grid-template-columns: repeat(16, 1fr);
         grid-template-rows: 70px 50px auto 100px;
-        gap: 10px;
+        gap: 12px;
     }
 
     header {
